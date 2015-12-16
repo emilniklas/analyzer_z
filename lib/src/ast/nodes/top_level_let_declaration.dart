@@ -7,7 +7,7 @@ class TopLevelLetDeclaration extends TopLevelValueDeclaration {
     Expression value
   }) : super(type: type, name: name, value: value);
 
-  factory TopLevelLetDeclaration._parse(Parser parser) {}
+  factory TopLevelLetDeclaration._parse(Parser parser) { throw new UnsupportedError('implement TopLevelLetDeclaration'); }
 
   bool get isConst => false;
 

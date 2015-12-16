@@ -5,7 +5,7 @@ class Identifier extends Node {
 
   const Identifier(this.value) : super.empty();
 
-  factory Identifier._parse(Parser parser) {}
+  factory Identifier._parse(Parser parser) { throw new UnsupportedError('implement Identifier'); }
 
   bool operator ==(other) {
     return other is Identifier

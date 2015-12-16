@@ -11,7 +11,7 @@ class TopLevelFunctionDeclaration extends TopLevelDeclaration<BlockLevelDeclarat
   }) : arguments = arguments,
         super(name: name, children: arguments);
 
-  factory TopLevelFunctionDeclaration._parse(Parser parser) {}
+  factory TopLevelFunctionDeclaration._parse(Parser parser) { throw new UnsupportedError('implement TopLevelFunctionDeclaration'); }
 
   bool operator ==(other) {
     return other is TopLevelFunctionDeclaration

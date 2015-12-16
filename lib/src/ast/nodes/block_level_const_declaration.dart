@@ -7,7 +7,7 @@ class BlockLevelConstDeclaration extends BlockLevelValueDeclaration {
     Expression value
   }) : super(type: type, name: name, value: value);
 
-  factory BlockLevelConstDeclaration._parse(Parser parser) {}
+  factory BlockLevelConstDeclaration._parse(Parser parser) { throw new UnsupportedError('implement BlockLevelConstDeclaration'); }
 
   bool get isConst => true;
 

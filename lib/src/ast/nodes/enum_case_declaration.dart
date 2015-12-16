@@ -5,7 +5,7 @@ class EnumCaseDeclaration extends Node {
 
   const EnumCaseDeclaration(this.name) : super.empty();
 
-  factory EnumCaseDeclaration._parse(Parser parser) {}
+  factory EnumCaseDeclaration._parse(Parser parser) { throw new UnsupportedError('implement EnumCaseDeclaration'); }
 
   bool operator ==(other) {
     return other is EnumCaseDeclaration

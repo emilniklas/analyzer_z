@@ -11,7 +11,7 @@ class Constructor extends ClassLevelDeclaration implements FunctionDeclaration {
     NodeList<Node> children
   }) : super(name: name, children: children);
 
-  factory Constructor._parse(Parser parser) {}
+  factory Constructor._parse(Parser parser) { throw new UnsupportedError('implement Constructor'); }
 
   TypeName get returnType => null;
 

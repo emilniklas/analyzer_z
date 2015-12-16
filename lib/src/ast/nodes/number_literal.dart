@@ -5,7 +5,7 @@ class NumberLiteral extends ExpressionLevelDeclaration {
 
   const NumberLiteral(this.value) : super(const NodeList.empty());
 
-  factory NumberLiteral._parse(Parser parser) {}
+  factory NumberLiteral._parse(Parser parser) { throw new UnsupportedError('implement NumberLiteral'); }
 
   bool operator ==(other) {
     return other is NumberLiteral

@@ -7,7 +7,7 @@ class ClassLevelConstDeclaration extends ClassLevelValueDeclaration {
     Expression value
   }) : super(type: type, name: name, value: value);
 
-  factory ClassLevelConstDeclaration._parse(Parser parser) {}
+  factory ClassLevelConstDeclaration._parse(Parser parser) { throw new UnsupportedError('implement ClassLevelConstDeclaration'); }
 
   bool get isConst => true;
 

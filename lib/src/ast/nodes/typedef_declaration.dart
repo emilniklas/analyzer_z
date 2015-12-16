@@ -10,7 +10,7 @@ class TypedefDeclaration extends TopLevelDeclaration implements FunctionDeclarat
     Identifier name
   }) : super(name: name, children: const NodeList.empty());
 
-  factory TypedefDeclaration._parse(Parser parser) {}
+  factory TypedefDeclaration._parse(Parser parser) { throw new UnsupportedError('implement TypedefDeclaration'); }
 
   bool operator ==(other) {
     return other is TypedefDeclaration

@@ -6,7 +6,7 @@ class Argument extends BlockLevelValueDeclaration {
     TypeName type
   }) : super(name: name, type: type);
 
-  factory Argument._parse(Parser parser) {}
+  factory Argument._parse(Parser parser) { throw new UnsupportedError('implement Argument'); }
 
   bool get isConst => false;
 

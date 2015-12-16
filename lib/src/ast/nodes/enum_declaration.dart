@@ -9,7 +9,7 @@ class EnumDeclaration extends TopLevelDeclaration<EnumCaseDeclaration> {
   }) : cases = cases,
         super(name: name, children: cases);
 
-  factory EnumDeclaration._parse(Parser parser) {}
+  factory EnumDeclaration._parse(Parser parser) { throw new UnsupportedError('implement EnumDeclaration'); }
 
   bool operator ==(other) {
     return other is EnumDeclaration

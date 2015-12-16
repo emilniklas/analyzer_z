@@ -5,7 +5,7 @@ class ArgumentList extends NodeList<Argument> {
 
   const ArgumentList.empty() : super.empty();
 
-  factory ArgumentList._parse(Parser parser) {}
+  factory ArgumentList._parse(Parser parser) { throw new UnsupportedError('implement ArgumentList'); }
 
   bool operator ==(other) {
     return other is ArgumentList

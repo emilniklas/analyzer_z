@@ -6,7 +6,7 @@ class BlockLevelDeclaration extends Node {
   const BlockLevelDeclaration({this.name, NodeList<Node> children})
       : super(children);
 
-  factory BlockLevelDeclaration._parse(Parser parser) {}
+  factory BlockLevelDeclaration._parse(Parser parser) { throw new UnsupportedError('implement BlockLevelDeclaration'); }
 
   bool operator ==(other) {
     return other is BlockLevelDeclaration

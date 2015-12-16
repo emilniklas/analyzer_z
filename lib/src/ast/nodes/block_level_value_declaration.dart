@@ -10,7 +10,7 @@ abstract class BlockLevelValueDeclaration extends BlockLevelDeclaration {
     Identifier name
   }) : super(name: name, children: const NodeList<Node>.empty());
 
-  factory BlockLevelValueDeclaration._parse(Parser parser) {}
+  factory BlockLevelValueDeclaration._parse(Parser parser) { throw new UnsupportedError('implement BlockLevelValueDeclaration'); }
 
   bool get isConst;
 

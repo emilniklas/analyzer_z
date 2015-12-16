@@ -11,7 +11,7 @@ class ImportDeclaration extends TopLevelDeclaration {
     this.hide: const []
   }) : super(name: name, children: const NodeList.empty());
 
-  factory ImportDeclaration._parse(Parser parser) {}
+  factory ImportDeclaration._parse(Parser parser) { throw new UnsupportedError('implement ImportDeclaration'); }
 
   bool operator ==(other) {
     return other is ImportDeclaration

@@ -13,7 +13,7 @@ class StringLiteral extends ExpressionLevelDeclaration {
     this.isUsingSingleQuotes: true
   }) : super(const NodeList.empty());
 
-  factory StringLiteral._parse(Parser parser) {}
+  factory StringLiteral._parse(Parser parser) { throw new UnsupportedError('implement StringLiteral'); }
 
   bool operator ==(other) {
     return other is StringLiteral

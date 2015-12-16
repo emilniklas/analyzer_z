@@ -9,7 +9,7 @@ class ExportDeclaration extends TopLevelDeclaration {
     this.hide: const []
   }) : super(name: name, children: const NodeList.empty());
 
-  factory ExportDeclaration._parse(Parser parser) {}
+  factory ExportDeclaration._parse(Parser parser) { throw new UnsupportedError('implement ExportDeclaration'); }
 
   bool operator ==(other) {
     return other is ExportDeclaration

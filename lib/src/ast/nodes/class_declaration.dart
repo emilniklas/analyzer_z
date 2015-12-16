@@ -19,7 +19,7 @@ class ClassDeclaration extends TopLevelDeclaration<ClassLevelDeclaration> {
     parser.move(); // class
     parser.expect(parser.next is tokens.Symbol, 'Symbol');
     parser.move(); // symbol
-    final Identifier name = new Identifier((parser._current as tokens.Symbol).value);
+    final Identifier name = new Identifier((parser.current as tokens.Symbol).value);
     return new ClassDeclaration(
         name: name,
         abstract: isAbstract,

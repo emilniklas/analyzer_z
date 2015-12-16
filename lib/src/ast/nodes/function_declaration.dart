@@ -5,5 +5,5 @@ abstract class FunctionDeclaration {
   TypeName get returnType;
   Identifier get name;
 
-  factory FunctionDeclaration._parse(Parser parser) {}
+  factory FunctionDeclaration._parse(Parser parser) { throw new UnsupportedError('implement FunctionDeclaration'); }
 }

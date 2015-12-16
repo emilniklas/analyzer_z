@@ -10,7 +10,7 @@ abstract class TopLevelValueDeclaration extends TopLevelDeclaration {
     Identifier name
   }) : super(name: name, children: const NodeList<Node>.empty());
 
-  factory TopLevelValueDeclaration._parse(Parser parser) {}
+  factory TopLevelValueDeclaration._parse(Parser parser) { throw new UnsupportedError('implement TopLevelValueDeclaration'); }
 
   bool get isConst;
 

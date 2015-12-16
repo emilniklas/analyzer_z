@@ -7,7 +7,7 @@ class RootNode extends Node<TopLevelDeclaration> {
 
   factory RootNode._parse(Parser parser) {
     final topLevel = <TopLevelDeclaration>[];
-    while (!parser.isAtEnd()) {
+    while (!parser.isAtEndOfFile) {
       if (parser.next is tokens.Break) {
         parser.movePastBreaks();
         continue;
