@@ -1,0 +1,9 @@
+name: analyzer_z
+version: 0.1.0
+description: An experimental project to try and modernize the Dart syntax
+author: Emil Persson <emil.n.persson@gmail.com>
+dev_dependencies:
+  test: any
+  testcase: any
+dependencies:
+  args: '>=0.13.2 <0.14.0'
